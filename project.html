@@ -37,9 +37,11 @@
       width: 30px;
       height: 30px;
       background-color: burlywood;
+      border-radius: 100%;
     }
 
     .navbar a ,.navbar b{
+      font-family: canva, sans-serif;
       font-size: 30px;
       display: inline-block;
       margin-right: 10px;
@@ -97,11 +99,11 @@
       <a href="./project_barber.html">Barber</a>
       <a href="#">Style & Price</a>
     </nav>
-    <a href="#"><img src="logo jihad barbershop.png" alt="Jihad Barbershop" class="logo"></a>
+    <a href="./project_home.html"><img src="logo jihad barbershop.png" alt="Jihad Barbershop" class="logo"></a>
     <nav class="right">
       <a href="#">Booking</a>
-      <a href="#">Contact Us</a>
-      <a href="#"><img src="account_icon.jpg" alt="Account" class="icon"></a>
+      <a href="./project_contactus.html">Contact Us</a>
+      <a href="./register.html"><img src="account_icon.jpg" alt="Account" class="icon"></a>
     </nav>
   </div>
   <div class="title-container">
@@ -110,6 +112,7 @@
   </div>
 </body>
 </html>
+
 
 #########
 
@@ -154,9 +157,11 @@
       width: 30px;
       height: 30px;
       background-color: burlywood;
+      border-radius: 100%;
     }
 
     .navbar a ,.navbar b{
+      font-family: canva, sans-serif;
       font-size:30px ;
       display: inline-block; 
       margin-right: 10px;
@@ -233,11 +238,11 @@
       <b>Barber</b>
       <a href="#">Style & Price</a>
     </nav>
-    <a href="#"><img src="logo jihad barbershop.png" alt="Jihad Barbershop" class="logo"></a>
+    <a href="./project_home.html"><img src="logo jihad barbershop.png" alt="Jihad Barbershop" class="logo"></a>
     <nav class="right">
       <a href="#">Booking</a>
-      <a href="#">Contact Us</a>
-      <a href="#"><img src="account_icon.jpg" alt="Account" class="icon"></a>
+      <a href="./project_contactus.html">Contact Us</a>
+      <a href="./login.html"><img src="account_icon.jpg" alt="Account" class="icon"></a>
     </nav>
   </div>
     <h1><b>Barber</b></h1>
@@ -279,4 +284,314 @@
     </script>
 </body>
 </html>
+
 ##########
+*/ login /*
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: brush script, serif;
+            background-color: beige;
+            min-height: 200vh;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: burlywood;
+            padding: 30px;
+        }
+
+        .logo {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            border: 2px solid darkblue;
+            border-radius: 50%;
+        }
+
+        .icon {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: burlywood;
+            border-radius: 100%;
+        }
+
+        .navbar a, .navbar b {
+            font-family: canva, sans-serif;
+            font-size: 30px;
+            display: inline-block;
+            margin-right: 10px;
+            margin-left: 10px;
+            text-decoration: none;
+            color: black;
+            text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+        }
+
+        .navbar nav {
+            display: inline-block;
+            flex: 1;
+            text-align: center;
+        }
+
+        .left, .right {
+            display: inline-block;
+            margin: 10 10px;
+        }
+
+        .login-container {
+            background-color: #d2a671;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px auto; /* Center the form horizontally */
+        }
+
+        .login-header {
+            background-color: #55342b;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 10px 10px 0 0;
+            margin: -20px -20px 20px -20px;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid black;
+            background: none;
+            font-size: 16px;
+        }
+
+        .login-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            background-color: #55342b;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background-color: #432a22;
+        }
+
+        .login-container .login-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .login-container .login-link a {
+            color: #0000ee;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav class="left">
+            <a href="./project_home.html">Home</a>
+            <a href="./project_barber.html">Barber</a>
+            <a href="#">Style & Price</a>
+        </nav>
+        <a href="./project_home.html"><img src="logo jihad barbershop.png" alt="Jihad Barbershop" class="logo"></a>
+        <nav class="right">
+            <a href="#">Booking</a>
+            <a href="./project_contactus.html">Contact Us</a>
+            <img src="account_icon.jpg" alt="Account" class="icon"></a>
+        </nav>
+    </div>
+    <div class="login-container">
+        <div class="login-header">
+            <h2>Login</h2>
+        </div>
+        <form>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="LOGIN">
+        </form>
+        <div class="login-link">
+            Not a member? <a href="./register.html">Register</a>
+        </div>
+    </div>
+</body>
+</html>
+###########
+*/register/*
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: brush script, serif;
+            background-color: beige;
+            min-height: 200vh;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: burlywood;
+            padding: 30px;
+        }
+
+        .logo {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            border: 2px solid darkblue;
+            border-radius: 50%;
+        }
+
+        .icon {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: burlywood;
+            border-radius: 100%;
+        }
+
+        .navbar a, .navbar b {
+            font-family: canva, sans-serif;
+            font-size: 30px;
+            display: inline-block;
+            margin-right: 10px;
+            margin-left: 10px;
+            text-decoration: none;
+            color: black;
+            text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+        }
+
+        .navbar nav {
+            display: inline-block;
+            flex: 1;
+            text-align: center;
+        }
+
+        .left, .right {
+            display: inline-block;
+            margin: 10 10px;
+        }
+
+        .register-container {
+            background-color: #d2a671;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px auto; 
+        }
+
+        .register-header {
+            background-color: #55342b;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 10px 10px 0 0;
+            margin: -20px -20px 20px -20px;
+        }
+
+        .register-container input[type="text"],
+        .register-container input[type="email"],
+        .register-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid black;
+            background: none;
+            font-size: 16px;
+        }
+
+        .register-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            background-color: #55342b;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .register-container input[type="submit"]:hover {
+            background-color: #432a22;
+        }
+
+        .register-container .register-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .register-container .register-link a {
+            color: #0000ee;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav class="left">
+            <a href="./project_home.html">Home</a>
+            <a href="./project_barber.html">Barber</a>
+            <a href="#">Style & Price</a>
+        </nav>
+        <a href="./project_home.html"><img src="logo jihad barbershop.png" alt="Jihad Barbershop" class="logo"></a>
+        <nav class="right">
+            <a href="#">Booking</a>
+            <a href="./project_contactus.html">Contact Us</a>
+            <img src="account_icon.jpg" alt="Account" class="icon"></a>
+        </nav>
+    </div>
+    <div class="register-container">
+        <div class="register-header">
+            <h2>Register</h2>
+        </div>
+        <form>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm-password" placeholder="Confirm Password" required>
+            <input type="submit" value="SIGNUP">
+        </form>
+        <div class="register-link">
+            Already a member? <a href="./Login.html">Login</a>
+        </div>
+    </div>
+</body>
+</html>
+###########
