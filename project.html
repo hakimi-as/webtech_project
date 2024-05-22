@@ -103,11 +103,10 @@
   </div>
 </body>
 </html>
-#
+#########
 
-
-
-#project_barber(kimi)(menu bar still in correcting phase!!)
+#########
+*/ project_barber/* (DONE except menu bar!)-KIMI
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -160,7 +159,7 @@
 
     .navbar nav {
       display: inline-block;
-      flex: 1;/
+      flex: 1;
       text-align: center;
     }
     .left, .right{
@@ -192,6 +191,27 @@
      transition: transform 0.3s ease; 
     }
 
+   
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999; 
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        width: 45%; 
+    }
+
 </style>
 <body>
     <div class="navbar">
@@ -210,24 +230,40 @@
     <h1><b>Barber</b></h1>
     <div class="Picture">
         <div class="image-container">
-          <img src="profile_pic.png" alt="Barber 1" onclick="changePicture('timetable1.png')">
+          <img src="profile_pic.png" alt="Barber 1" onclick="showModal('timetable.png')">
           <h3><b>Barber 1</b></h3>
         </div>
         <div class="image-container">
-          <img src="profile_pic.png" alt="Barber 2" onclick="changePicture('timetable2.png')">
+          <img src="profile_pic.png" alt="Barber 2" onclick="showModal('timetable.png')">
           <h3><b>Barber 2</b></h3>       
          </div>
         <div class="image-container">
-          <img src="profile_pic.png" alt="Barber 3" onclick="changePicture('timetable3.png')">
+          <img src="profile_pic.png" alt="Barber 3" onclick="showModal('timetable.png')">
           <h3><b>Barber 3</b></h3>
         </div>
     </div>
 
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="timetable" style="max-width: 100%;">
+        </div>
+    </div>
+
     <script>
-        function changePicture(newSrc) {
-            document.getElementById('timetable').src = newSrc;
+        function showModal(imageSrc) {
+            var modalOverlay = document.getElementById('modalOverlay');
+            var modalImage = document.getElementById('modalImage');
+
+            modalImage.src = imageSrc;
+            modalOverlay.style.display = 'flex'; 
+        }
+        window.onclick = function(event) {
+            var modalOverlay = document.getElementById('modalOverlay');
+            if (event.target == modalOverlay) {
+                modalOverlay.style.display = "none";
+            }
         }
     </script>
 </body>
 </html>
-#
+##########
