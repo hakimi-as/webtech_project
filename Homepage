@@ -1,0 +1,543 @@
+//HTML CODE
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website with Video Background</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!-- footer -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <!-- == icon == -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <!-- == css == -->
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+    <!-- <video autoplay muted loop id="myVideo">
+        <source src="fit1.mov" type="video/mp4">
+    </video> -->
+    <header>
+        <div class="nav-area">
+                <div class="logo">
+                    <ul class="stamp">
+                      <li><img src="logo1.png"></li>
+                    </ul>
+                    <ul class="menu-area">
+                        <li><a href="https://jihadbarber.w3spaces.com/">Home</a></li>
+                        <li><a href="#">Barber</a></li>
+                        <li><a href="#">Style & Price</a></li>
+                        <li><a href="https://barberbooking.w3spaces.com">Booking</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#"><img src="profile3.svg"></a></li>
+                    </ul>
+                </div>
+        </div>
+        <div class="welcome-text">
+            <h2>Jihad Barbershop</h2>
+            <p>Offering top-notch grooming services. We provide everything from classic cuts to beard grooming in a stylish setting. With skilled barbers and a welcoming vibe, we promise a great experience for every customer!</p>
+            <button class="btn">Start Your Journey With Us</button>
+        </div>
+        
+    </header>
+    <br><br>
+    <h2 id="special">WHAT'S SPECIAL ABOUT OUR SHOP?</h2>
+    <section>
+        <div class="logos">
+            <div class="logo hidden">
+                <img src="lamp.png">
+            </div>
+            <div class="logo hidden">
+                <img src="barber.png">
+            </div>
+            <div class="logo hidden">
+                <img src="style.png">
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <marquee behavior="scroll" direction="scroll">GOOD HAIR = GOOD LIFE</marquee>
+
+    <div class="time">
+        <p>OPEN DAILY!</p><br>
+        <ul>
+            <li>Monday 5:30 – 11:30 pm</li>
+            <li>Tuesday 2 – 11:30 pm</li>
+            <li>Wednesday 2:30 – 11:30 pm</li>
+            <li>Thursday 2:30 – 11:30 pm</li>
+            <li>Friday 3 – 11 pm</li>
+            <li>Saturday 2:30 – 10 pm</li>
+            <li>Sunday 2:30 – 8 pm</li>
+        </ul>
+    </div>
+    <img src="review.png" class="responsive-img">
+
+    <!-- <footer class="bot">
+        <h5>Your Trusted Barber</h5>
+
+        <p>© 2024 Jihad Barbershop Sdn Bhd . All rights reserved.</p>
+        <p>The information is provided by Jihad Barbershop Sdn. Bhd. and while we endeavour to keep the information up to date and correct as much as possible. When you visit or interact with our sites, services, applications, tools or messaging, we or our authorised service providers may use cookies, web beacons, and other similar technologies for storing information to help provide you with a better, faster and safer experience and for advertising purposes.</p>
+        <p>Web design by Gransazer</p>   
+    </footer>    -->
+    <!-- <h1>Responsive Footer</h1> -->
+    <footer class="footer">
+        <div class="container">
+          <div class="col1">
+            <a href="#" class="brand">JihadBarber</a>
+            <ul class="media-icons">
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col2">
+            <ul class="menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Barber</a></li>
+              <li><a href="#">Style & Price</a></li>
+              <li><a href="#">Booking</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col3">
+            <p><img src="logo1.png"></p><br>
+            <p>© 2024 Jihad Barbershop Sdn Bhd . All rights reserved.</p> 
+          </div>
+        <!-- </div>
+        <div class="footer-bottom">
+          <div class="mekk">
+            <p id="f">The information is provided by Jihad Barbershop Sdn. Bhd. and while we endeavour to keep the information up to date and correct as much as possible. When you visit or interact with our sites, services, or applications, we store the information to help provide you with a better, faster and safer experience and for advertising purposes.</p>
+          </div>
+        </div> -->
+      </footer>
+    </div>
+    <div class="footer-bottom">
+      <div class="mekk">
+        <p>© 2024 Jihad Barbershop Sdn Bhd . All rights reserved.</p><br>
+        <p>The information is provided by Jihad Barbershop Sdn. Bhd. and while we endeavour to keep the information up to date and correct as much as possible. When you visit or interact with our sites, services, applications, tools or messaging, we or our authorised service providers may use cookies, web beacons, and other similar technologies for storing information to help provide you with a better, faster and safer experience and for advertising purposes.</p><br>
+        <p>Web design by Gransazer</p> 
+      </div>
+    </div>  
+</body>
+</html>
+
+//CSS CODE
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  /* Style the video element */
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover; /* Scales video to fill the viewport while maintaining aspect ratio */
+    z-index: -1; /* Ensures video is behind other content */
+  }
+  
+  /* Style the content container */
+  * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    }
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+    header {
+        height: 100vh;
+        position: relative;
+    }
+    .nav-area {
+        height: 60px;
+        position: absolute;
+        width: 100%;
+    }
+    .logo > img{
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+        /* margin: 10px 50px;
+        height: 60px;
+        float: left;
+        color: #fff;
+        font-size: 35px;
+        text-transform: capitalize; */
+    }
+    .stamp
+    {
+        float: left;
+        list-style: none;
+        margin: 10px;
+    }
+    .menu-area {
+        float: right;
+        list-style: none;
+        margin: 20px;
+        margin-top: 30px;
+    }
+    .menu-area li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+    .menu-area li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 10px;
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+    .menu-area li a:hover {
+        color: deepskyblue;
+    }
+    header .welcome-text {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .welcome-text h2 {
+        color: #fff;
+        font-size: 80px;
+        margin: 0;
+        font-family: 'Bebas Neue', sans-serif;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 2px #fff;
+    }
+    .welcome-text p {
+        color: #fff;
+        font-size: 18px;
+        width: 45%;
+        line-height: 1.8;
+        margin: auto;
+    }
+    .btn {
+        background: transparent;
+        border: none;
+        color: #fff;
+        padding: 10px 30px;
+        font-size: 15px;
+        text-transform: uppercase;
+        border-radius: 25px;
+        display: inline-block;
+        margin-top: 25px;
+        border: 2px solid #fff;
+        transition: background .6s ease-in;
+    }
+    .btn:hover {
+        background: #fff;
+        color: #000;
+    }
+    /*responsive*/
+
+    @media (min-width: 767px) and (max-width: 991px) {
+        .welcome-text p {
+            width: 95%;
+        }
+    }
+    @media (max-width: 767px) {
+        .logo {
+            float: none;
+            text-align: center;
+            margin: 5px 0;
+            font-size: 23px;
+            height: 45px;
+            line-height: 45px;
+        }
+        .menu-area {
+            float: none;
+            text-align: center;
+            margin: 0;
+        }
+        .menu-area li {
+            margin: 0;
+        }
+        .menu-area li a {
+            padding: 5px 2px;
+            font-size: 12px;
+        }
+        
+        .nav-area {
+            height: 90px;
+        }
+        .welcome-text h2 {
+            font-size: 30px;
+            margin-bottom: 18px;
+            -webkit-text-stroke: 1px #fff;
+        }
+        .welcome-text p {
+            width: 90%;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    }
+    #special
+    {
+        text-align: center;
+        color: #fff;
+    }
+    section
+    {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    }
+
+    .hidden
+    {
+        opacity: 0; /*berapa lutsinar element tu */
+        filter: blur(5px);
+        transform: translateX(-100%);
+        transition: all 1s;
+    }
+
+    .show
+    {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+        /* transform: rotate(20deg); */
+    }
+    .logos
+    {
+        display: flex;
+    }
+    .logo:nth-child(1)
+    {
+        transition-delay: 200ms;
+        perspective: 100px;
+    }
+    .logo:nth-child(2)
+    { 
+        transition-delay: 400ms;
+        perspective: 100px;
+    }
+    .logo:nth-child(3)
+    {
+        transition-delay: 600ms;
+        perspective: 100px;
+    }  
+    img
+    {
+        transition: transform 1s;
+    }
+    img:hover
+    {
+        transform: translateZ(10px);
+    }
+
+    marquee
+    {
+        font-size: 5vw;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px #000000;
+        width: 100%;
+        color: rgb(165, 199, 230);
+        padding: 30px;
+        color: aliceblue;
+        border-radius: 5px;
+    }
+    .time li
+    {
+        list-style-type: none;
+    }
+    div.time
+    {
+        padding: 30px;
+        background: url(wallbg.png) ;
+        background-position: right;
+        background-attachment: scroll;
+        /* background-size: cover; */
+        color: black;
+        font-weight: bold;
+        border: solid;
+        text-align: center;
+    }
+    img.responsive-img
+    {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      width: 100%;
+      max-width: 80%;
+      height: auto; /* Maintains aspect ratio */
+    }
+    /* img.rev //review code
+    {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    } */
+    .bot
+    {
+        font-size: 10px;
+        font-weight: bold;
+        color: antiquewhite;
+        /* text-indent: 50px; */
+        text-align: justify;
+        /* letter-spacing: 3px; */
+        padding: 10px;
+        width: 70%;
+        height: 100px;
+        position: relative;
+        bottom: 10%;
+        left: 15%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+  footer {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background: linear-gradient(45deg,#acd2d6,#91a5a1,#fff8db,#e6b451,#5e6e54); 
+    background-size: 300% 300%;
+    background-attachment: fixed;
+    animation: color 5s ease-in-out infinite;
+  }
+  @keyframes color {
+    0%{
+        background-position: 0 85%;
+    }
+    50%{
+        background-position: 100% 20%;
+    }
+    100%{
+        background-position: 0 85%;
+    }    
+}
+  footer ul {
+    list-style: none;
+  }
+  footer p {
+    /* color: #fff; */
+    max-width: 25em;
+    font-size: 0.9em;
+    line-height: 23px;
+  }
+  footer a {
+    /* color: #fff; */
+    text-decoration: none;
+  }
+  footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+  }
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+  }
+  .brand {
+    display: block;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
+  .media-icons li {
+    display: inline-block;
+    margin: 0.5em 0.5em 0.5em 0;
+  }
+  .media-icons a {
+    font-size: 1.1em;
+    width: 2em;
+    height: 2em;
+    border: 1px #fff solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+  }
+  .media-icons a:hover {
+    transform: translateY(-10px);
+    background: #fff;
+    color: #111;
+  }
+  .footer-bottom {
+    font-size: 10px;
+    font-weight: bold;
+    text-align: justify;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 150px;
+    padding-left: 150px;
+
+    background: linear-gradient(360deg,#acd2d6,#91a5a1,#fff8db,#e6b451,#5e6e54); 
+    background-size: 300% 300%;
+    background-attachment: fixed;
+    animation: color 5s ease-in-out infinite;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .footer .menu {
+    margin-bottom: 1em;
+  }
+  .footer .menu li {
+    display: block;
+    margin: 0 0.7em 0.7em 0;
+    line-height: 2;
+    text-align: center;
+  }
+  .footer .menu a {
+    transition: 0.3s;
+    font-weight: 600;
+  }
+  .footer .menu a:hover {
+    color: #c74848;
+  }
+  div.col3
+  {
+    color: rgb(41, 41, 63);
+    text-shadow: 2px 2px 4px #000;
+    font-weight: bold;
+    text-align: center;
+  }
+  /* == responsive == */
+  @media screen and (max-width: 900px) {
+    .footer .container {
+      flex-direction: column;
+    }
+  }
+
+//JS CODE
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });         
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
