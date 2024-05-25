@@ -81,25 +81,15 @@
             <li>Thursday 2:30 – 11:30 pm</li>
             <li>Friday 3 – 11 pm</li>
             <li>Saturday 2:30 – 10 pm</li>
-            <li>Sunday 2:30 – 8 pm</li>
+            <li>Sunday 2:30 – 8 pm</li><br>
+            <li style="list-style-type: square;">REST/PRAYER: 7-8 PM☪️</li>
         </ul>
         </p>
       </div>
     </div>
      <br>
     <button id="button" class="ui-state-default ui-corner-all">Click Me to View Open Hour</button>
-    <!-- <div class="time">
-        <p>OPEN DAILY!</p><br>
-        <ul>
-            <li>Monday 5:30 – 11:30 pm</li>
-            <li>Tuesday 2 – 11:30 pm</li>
-            <li>Wednesday 2:30 – 11:30 pm</li>
-            <li>Thursday 2:30 – 11:30 pm</li>
-            <li>Friday 3 – 11 pm</li>
-            <li>Saturday 2:30 – 10 pm</li>
-            <li>Sunday 2:30 – 8 pm</li>
-        </ul>
-    </div> -->
+  
     <img src="review.png" class="responsive-img">
 
     <footer class="footer">
@@ -410,7 +400,7 @@ body {
         display: block;
         margin: auto;
       }
-      #effect { width: 260px; height: 270px; padding: 0.4em; position: relative; background: #fff; }
+      #effect { width: 260px; height: 300px; padding: 0.4em; position: relative; background: #fff; }
       #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
       
     img.responsive-img
