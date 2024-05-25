@@ -6,6 +6,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Website with Video Background</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <!-- footer -->
@@ -15,8 +17,13 @@
   <!-- == icon == -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
   <!-- == css == -->
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="scripts.js"></script>
+  <link rel="stylesheet" href="styil.css">
+  <script defer src="script.js"></script>
+  <!-- Jquery script -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
 </head>
 <body>
     <!-- <video autoplay muted loop id="myVideo">
@@ -63,7 +70,25 @@
     <br><br>
     <marquee behavior="scroll" direction="scroll">GOOD HAIR = GOOD LIFE</marquee>
 
-    <div class="time">
+    <div class="toggler">
+      <div id="effect" class="ui-widget-content ui-corner-all">
+        <h3 class="ui-widget-header ui-corner-all">OPEN DAILY!</h3>
+        <p>
+          <ul>
+            <li>Monday 5:30 – 11:30 pm</li>
+            <li>Tuesday 2 – 11:30 pm</li>
+            <li>Wednesday 2:30 – 11:30 pm</li>
+            <li>Thursday 2:30 – 11:30 pm</li>
+            <li>Friday 3 – 11 pm</li>
+            <li>Saturday 2:30 – 10 pm</li>
+            <li>Sunday 2:30 – 8 pm</li>
+        </ul>
+        </p>
+      </div>
+    </div>
+     <br>
+    <button id="button" class="ui-state-default ui-corner-all">Click Me to View Open Hour</button>
+    <!-- <div class="time">
         <p>OPEN DAILY!</p><br>
         <ul>
             <li>Monday 5:30 – 11:30 pm</li>
@@ -74,33 +99,22 @@
             <li>Saturday 2:30 – 10 pm</li>
             <li>Sunday 2:30 – 8 pm</li>
         </ul>
-    </div>
+    </div> -->
     <img src="review.png" class="responsive-img">
 
-    <!-- <footer class="bot">
-        <h5>Your Trusted Barber</h5>
-
-        <p>© 2024 Jihad Barbershop Sdn Bhd . All rights reserved.</p>
-        <p>The information is provided by Jihad Barbershop Sdn. Bhd. and while we endeavour to keep the information up to date and correct as much as possible. When you visit or interact with our sites, services, applications, tools or messaging, we or our authorised service providers may use cookies, web beacons, and other similar technologies for storing information to help provide you with a better, faster and safer experience and for advertising purposes.</p>
-        <p>Web design by Gransazer</p>   
-    </footer>    -->
-    <!-- <h1>Responsive Footer</h1> -->
     <footer class="footer">
         <div class="container">
           <div class="col1">
             <a href="#" class="brand">JihadBarber</a>
             <ul class="media-icons">
               <li>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
               </li>
               <li>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
               </li>
             </ul>
           </div>
@@ -117,12 +131,6 @@
             <p><img src="logo1.png"></p><br>
             <p>© 2024 Jihad Barbershop Sdn Bhd . All rights reserved.</p> 
           </div>
-        <!-- </div>
-        <div class="footer-bottom">
-          <div class="mekk">
-            <p id="f">The information is provided by Jihad Barbershop Sdn. Bhd. and while we endeavour to keep the information up to date and correct as much as possible. When you visit or interact with our sites, services, or applications, we store the information to help provide you with a better, faster and safer experience and for advertising purposes.</p>
-          </div>
-        </div> -->
       </footer>
     </div>
     <div class="footer-bottom">
@@ -160,9 +168,9 @@ body {
   
   /* Style the content container */
   * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
     body {
         font-family: 'Montserrat', sans-serif;
@@ -211,7 +219,7 @@ body {
         font-weight: 700;
     }
     .menu-area li a:hover {
-        color: deepskyblue;
+        color: #3ded97;
     }
     header .welcome-text {
         position: absolute;
@@ -298,8 +306,12 @@ body {
     }
     #special
     {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        text-decoration: underline overline rgb(92, 90, 90);
         text-align: center;
-        color: #fff;
+        
     }
     section
     {
@@ -373,12 +385,34 @@ body {
         background: url(wallbg.png) ;
         background-position: right;
         background-attachment: scroll;
-        /* background-size: cover; */
+       
         color: black;
         font-weight: bold;
         border: solid;
         text-align: center;
     }
+      .toggler { 
+        display: flex;
+        justify-content: center;
+        width: 100%; 
+        height: auto; 
+        position: relative; 
+        font-weight: bold;
+        /* text-align: center; */
+        overflow: hidden;
+        
+      }
+      #button { 
+        padding: .5em 1em;
+        text-decoration: none; 
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
+        display: block;
+        margin: auto;
+      }
+      #effect { width: 260px; height: 270px; padding: 0.4em; position: relative; background: #fff; }
+      #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+      
     img.responsive-img
     {
       display: block;
@@ -416,7 +450,7 @@ body {
     margin: 0;
     padding: 0;
     color: black;
-    background: linear-gradient(45deg,#acd2d6,#91a5a1,#fff8db,#e6b451,#5e6e54); 
+    background: linear-gradient(45deg,black,brown,black,#5e2c04,black); 
     background-size: 300% 300%;
     background-attachment: fixed;
     animation: color 5s ease-in-out infinite;
@@ -482,6 +516,7 @@ body {
     color: #111;
   }
   .footer-bottom {
+    color: grey;
     font-size: 10px;
     font-weight: bold;
     text-align: justify;
@@ -491,7 +526,7 @@ body {
     padding-right: 150px;
     padding-left: 150px;
 
-    background: linear-gradient(360deg,#acd2d6,#91a5a1,#fff8db,#e6b451,#5e6e54); 
+    background: linear-gradient(45deg,black,brown,black,#5e2c04,black); 
     background-size: 300% 300%;
     background-attachment: fixed;
     animation: color 5s ease-in-out infinite;
@@ -511,7 +546,7 @@ body {
     font-weight: 600;
   }
   .footer .menu a:hover {
-    color: #c74848;
+    color: #3ded97;
   }
   div.col3
   {
@@ -529,15 +564,35 @@ body {
 
 //JS CODE
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        console.log(entry)
-        if(entry.isIntersecting){
-            entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
-        }
-    });         
+  entries.forEach((entry) => {
+      console.log(entry)
+      if(entry.isIntersecting){
+          entry.target.classList.add('show');
+      } else {
+          entry.target.classList.remove('show');
+      }
+  });         
 });
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+$( function() {
+    var state = true;
+    $( "#button" ).on( "click", function() {
+      if ( state ) {
+        $( "#effect" ).animate({
+          backgroundColor: "#aa0000",
+          color: "#fff",
+          width: 500
+        }, 1000 );
+      } else {
+        $( "#effect" ).animate({
+          backgroundColor: "#fff",
+          color: "#000",
+          width: 240
+        }, 1000 );
+      }
+      state = !state;
+    });
+  } );
