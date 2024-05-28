@@ -44,9 +44,9 @@
           margin: 0;
           padding: 0;
       }
-      body {
+      /* body {
           font-family: 'Montserrat', sans-serif;
-      }
+      } */
       header {
           height: 100vh;
           position: relative;
@@ -451,12 +451,12 @@
                       <li><img src="logo1.png"></li>
                     </ul>
                     <ul class="menu-area">
-                        <li><a href="https://homepagebarber.w3spaces.com">Home</a></li>
-                        <li><a href="https://jihadbarbers.w3spaces.com/barberpage.html">Barber</a></li>
-                        <li><a href="#">Style & Price</a></li>
-                        <li><a href="https://jihadbarbers.w3spaces.com/barberbooking.html">Booking</a></li>
+                        <li><a href="https://homepagewebs.w3spaces.com/">Home</a></li>
+                        <li><a href="https://jihadbarberpages.w3spaces.com/barberpage.html">Barber</a></li>
+                        <li><a href="https://hairstylejihad.w3spaces.com">Style & Price</a></li>
+                        <li><a href="https://jihadbarberpages.w3spaces.com/barberbooking.html">Booking</a></li>
                         <li><a href="https://jihadcontact.w3spaces.com/contactuspage.html">Contact Us</a></li>
-                        <li><a href="https://jihadbarbers.w3spaces.com/barberlogin.html"><img src="profile3.svg"></a></li>
+                        <li><a href="https://jihadbarberpages.w3spaces.com/barberlogin.html"><img src="profile3.svg"></a></li>
                     </ul>
                 </div>
         </div>
@@ -504,7 +504,8 @@
     </div>
      <br>
     <button id="button" class="ui-state-default ui-corner-all">Click Me</button>
-    <img src="review.png" class="responsive-img">
+    
+    <iframe src="https://widget.tagembed.com/151079?view" style=" width:100%;height:500px;overflow: auto;" frameborder="0" allowtransparency="true"></iframe>
 
     <footer class="footer">
         <div class="container">
@@ -524,11 +525,11 @@
           </div>
           <div class="col2">
             <ul class="menu">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Barber</a></li>
-              <li><a href="#">Style & Price</a></li>
-              <li><a href="#">Booking</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="https://homepagewebs.w3spaces.com/">Home</a></li>
+              <li><a href="https://jihadbarberpages.w3spaces.com/barberpage.html">Barber</a></li>
+              <li><a href="https://hairstylejihad.w3spaces.com">Style & Price</a></li>
+              <li><a href="https://jihadbarberpages.w3spaces.com/barberbooking.html">Booking</a></li>
+              <li><a href="https://jihadcontact.w3spaces.com/contactuspage.html">Contact Us</a></li>
             </ul>
           </div>
           <div class="col3">
@@ -547,7 +548,7 @@
 
     <script defer>
       function myFunction() {
-      location.href = "https://jihadbarbers.w3spaces.com/barberbooking.html";
+      location.href = "https://jihadbarberpages.w3spaces.com/barberbooking.html";
     }
 
     const observer = new IntersectionObserver((entries) => {
@@ -569,14 +570,14 @@
         $( "#button" ).on( "click", function() {
           if ( state ) {
             $( "#effect" ).animate({
-              backgroundColor: "#aa0000",
-              color: "#fff",
+              backgroundColor: "#aa0000", //red
+              color: "#fff", //white
               width: 500
             }, 1000 );
           } else {
             $( "#effect" ).animate({
-              backgroundColor: "#fff",
-              color: "#000",
+              backgroundColor: "#fff", //white
+              color: "#000", //black
               width: 240
             }, 1000 );
           }
