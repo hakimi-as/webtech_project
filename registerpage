@@ -83,6 +83,9 @@
         }
 
         h1 {
+            font-family:'Bebas Neue', sans-serif;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 2px #fff;
             font-size: 60px;
             margin-top: 50px;
             color: white;
@@ -266,6 +269,7 @@
         }
 
         .register-header {
+        
             background-color: #55342b;
             color: #fff;
             text-align: center;
@@ -317,15 +321,15 @@
     <div class="nav-area">
         <div class="logo">
             <ul class="stamp">
-                <li><a href="https://homepagebarber.w3spaces.com"><img src="logo1.png" alt="Logo"></a></li>
+                <li><a href="https://homepagesite.w3spaces.com"><img src="logo1.png" alt="Logo"></a></li>
             </ul>
             <ul class="menu-area">
                 <li><a href="https://homepagesite.w3spaces.com">Home</a></li>
-                <li><a href="https://jihadbarbers.w3spaces.com/barberpage.html">Barber</a></li>
+                <li><a href="https://jihadbarberpages.w3spaces.com/barberpage.html">Barber</a></li>
                 <li><a href="https://hairstylejihad.w3spaces.com">Style & Price</a></li>
-                <li><a href="https://jihadbarbers.w3spaces.com/barberbooking.html">Booking</a></li>
+                <li><a href="https://jihadbarberpages.w3spaces.com/barberbooking.html">Booking</a></li>
                 <li><a href="https://jihadcontact.w3spaces.com/contactuspage.html">Contact Us</a></li>
-                <li><a href="https://jihadbarbers.w3spaces.com/barberlogin.html"><img src="profile3.svg"></a></li>
+                <li><a href="https://jihadbarberpages.w3spaces.com/barberlogin.html"><img src="profile3.svg"></a></li>
             </ul>
         </div>
     </div>
@@ -341,7 +345,7 @@
             <input type="submit" value="SIGNUP">
         </form>
         <div class="register-link">
-            Already a member? <a href="https://jihadbarbers.w3spaces.com/barberlogin.html">Login</a>
+            Already a member? <a href="https://jihadbarberpages.w3spaces.com/barberlogin.html">Login</a>
         </div>
     </div>
     <footer class="footer">
@@ -363,9 +367,9 @@
             <div class="col2">
                 <ul class="menu">
                     <li><a href="https://homepagesite.w3spaces.com">Home</a></li>
-                    <li><a href="https://jihadbarbers.w3spaces.com/barberpage.html">Barber</a></li>
+                    <li><a href="https://jihadbarberpages.w3spaces.com/barberpage.html">Barber</a></li>
                     <li><a href="https://hairstylejihad.w3spaces.com">Style & Price</a></li>
-                    <li><a href="https://jihadbarbers.w3spaces.com/barberbooking.html">Booking</a></li>
+                    <li><a href="https://jihadbarberpages.w3spaces.com/barberbooking.html">Booking</a></li>
                     <li><a href="https://jihadcontact.w3spaces.com/contactuspage.html">Contact Us</a></li>
                 </ul>
             </div>
